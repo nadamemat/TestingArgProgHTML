@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Caffier</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMWsrc5p9fgFdC_xEE4l86I1f0p7B_XDqxk0v_ia30_Q&s" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+
+        <nav> 
+               <div class="logo">
+               <img src="data:image/png;base64,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" alt="Logo de la cafetería">
+                </div>
+            <div class="menu">
+                <a href="#menu">Menú</a>
+                <a href="#acerca">Acerca de</a>
+                <a href="#ubicacion">Map</a>
+            </div>  
+               
+           <!-- <ul>
+                 <li><a href="#ofertas">Ofertas Especiales</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#contact">Reservas</a></li>
+                <li><a href="#contact">Pedidos para llevar</a></li>
+                <li><a href="#testimonios">Rerencias de clientes</a></li>
+            </ul>  -->
+        </nav>
+    </header>
+    
+    <main>
+        
+            <div class="menu" id="menu">
+                <h2>Menú</h2>
+                
+                <h3>Comidas</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Desayuno Continental</td>
+                            <td>$7.99</td>
+                        </tr>
+                        <tr>
+                            <td>Omelette de Champiñones</td>
+                            <td>$9.99</td>
+                        </tr>
+                        <tr>
+                            <td>Hamburguesa Clásica</td>
+                            <td>$8.99</td>
+                        </tr>
+                        <tr>
+                            <td>Pasta Alfredo</td>
+                            <td>$12.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Bebidas</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Café Americano</td>
+                            <td>$2.99</td>
+                        </tr>
+                        <tr>
+                            <td>Latte de Vainilla</td>
+                            <td>$4.49</td>
+                        </tr>
+                        <tr>
+                            <td>Jugo de Naranja Fresco</td>
+                            <td>$3.99</td>
+                        </tr>
+                        <tr>
+                            <td>Té de Hierbabuena</td>
+                            <td>$2.49</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3 id="ofertas">Promociones Especiales</h3>
+                <ul>
+                    <li>Menú del Día: Hamburguesa + Papas Fritas + Bebida - $10.99</li>
+                    <li>Happy Hour: 50% de descuento en todas las bebidas de 4:00 PM a 6:00 PM</li>
+                    <li>Descuento Estudiantil: 10% de descuento para estudiantes con identificación</li>
+                </ul>
+            </div>
+       
+    
+       
+        
+        <section id="acerca">
+            <h2>Acerca de Nosotros</h2>
+        
+            <h3>Nuestra Historia</h3>
+            <p>Cafetería El Sabor abrió sus puertas por primera vez en 1995. Desde entonces, nos hemos dedicado a servir a nuestra comunidad con los mejores sabores y experiencias de café. Nuestra historia se basa en la pasión por el café de alta calidad y el compromiso de ofrecer un ambiente acogedor para nuestros clientes.</p>
+        
+            <h3>Filosofía</h3>
+            <p>Nuestra filosofía se centra en la excelencia en cada taza. Buscamos constantemente los granos de café más selectos, los métodos de preparación más precisos y un servicio amable y atento para crear momentos especiales para cada cliente que nos visita. Valoramos la calidad, la autenticidad y el respeto por el medio ambiente en todo lo que hacemos.</p>
+        
+            <h3>Valores</h3>
+            <ul>
+                <li>Calidad: Nos esforzamos por ofrecer productos de la más alta calidad en cada servicio.</li>
+                <li>Hospitalidad: Creemos en tratar a nuestros clientes como amigos y hacer que se sientan como en casa.</li>
+                <li>Sostenibilidad: Nos comprometemos a utilizar prácticas sostenibles en la producción y distribución de nuestros productos.</li>
+                <li>Comunidad: Somos parte activa de nuestra comunidad y apoyamos iniciativas locales y causas sociales.</li>
+            </ul>
+        
+            <h3 id="testimonios">Testimonios</h3>
+            <blockquote>
+                <p>"Cafetería El Sabor es mi lugar favorito para tomar café. El ambiente es relajante y el café es siempre delicioso. ¡Altamente recomendado!"</p>
+                <cite>- María G., Cliente Frecuente</cite>
+            </blockquote>
+            
+            <blockquote>
+                <p>"He visitado muchas cafeterías en mi vida, pero ninguna se compara con la experiencia que obtengo en Cafetería El Sabor. ¡Siempre vuelvo por más!"</p>
+                <cite>- Juan R., Amante del Café</cite>
+            </blockquote>
+        </section>
+        
+        
+       
+        
+    </main>
+    
+    <aside id="ubicacion">
+        <h2>Mas Info:</h2>
+        <p>Dirección: Gral. Arredondo 5677, B1875 Wilde, Provincia de Buenos Aires</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.921951250678!2d-58.334588423586595!3d-34.70714847291753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccba1a6cefd3f%3A0xa32ef20383abced5!2sCafier%20-%20Coffee%20Roasters.!5e0!3m2!1ses-419!2sar!4v1694563733763!5m2!1ses-419!2sar" 
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
+    
+    <footer>
+    
+        <div id="contact">
+            <h2>Contacto - Reservas</h2>
+            <p>Email: <a href="mailto:Caffier@crack.com">Caffier@crack.com</a></p>
+            <p>Teléfono: <a href="tel:(123)456-7890">(123) 456-7890</a></p>
+            <p>WhatsApp: <a href="https://wa.me/1234567890">123-456-7890</a></p>
+          </div>
+          <div>
+            <a href="https://facebook.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmGQOjC_u_kSiGhNCA9Uv2aKPRjX-VKd4-xUmvEuUPA&s" alt="Facebook" /></a>
+            <a href="https://twitter.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReaNRdsTQRPuCrYX7evdU2YufJdkOx01ivHiVgwlaosA&s" alt="Twitter" /></a>
+            <a href="https://instagram.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJY43zkIuDmzCUnQysyc5t_emyUmDgowX51cqrlNFTdw&s" alt="Instagram" /></a>
+
+        </div>
+        <div>
+          <p>Todos los derechos reservados © 2023 - Cafetería Caffier</p>
+        </div>
+        <a href="#top">Volver arriba</a>
+    </footer>
+</body>
+</html>
